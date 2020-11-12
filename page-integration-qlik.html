@@ -81,7 +81,7 @@
         <!-- First Dashboard section-->
         <div class="row">
           <div class="col">
-            <h3 style="font-family: Open Sans;">iFrame with default theme, all filtering and interactivity enabled, small size.</h3>
+            <h3 style="font-family: Open Sans;">iFrame with default theme, all filtering and interactivity enabled.</h3>
 	    <p>frame width is set to 100% of the div, height is fixed to 768px</p>
             <iframe src="https://zsdemo.us.qlikcloud.com/single/?appid=7d1ec712-e3c9-4f5f-9a3c-12190e2ddd26&sheet=ebe049ca-3155-49b3-a9c9-f42120cd7440&lang=en-US&theme=sense&opt=ctxmenu,currsel" style="border:none;width:100%;height:768px;"></iframe>
             <hr>
@@ -90,18 +90,39 @@
         <!-- Second Dashboard section-->
         <div class="row">
           <div class="col">
-            <h3 style="font-family: Open Sans;">iFrame with default theme, all filtering and interactivity enabled, full size.</h3>
-	    <p>Same page with a height fixed at 1200px to display the table without having to scroll within the iFrame.</p>
-            <iframe src="https://zsdemo.us.qlikcloud.com/single/?appid=7d1ec712-e3c9-4f5f-9a3c-12190e2ddd26&sheet=ebe049ca-3155-49b3-a9c9-f42120cd7440&lang=en-US&theme=sense&opt=ctxmenu,currsel" style="border:none;width:100%;height:1200px;"></iframe>
+            <h3 style="font-family: Open Sans;">iFrame with custom theme, all filtering and interactivity disabled.</h3>
+	    <p>In this variation, the iFrame is using a custom theme. This could be very useful if the same dashboard is used for multiple user groups who all want their own branding</p>
+            <iframe src="https://zsdemo.us.qlikcloud.com/single/?appid=7d1ec712-e3c9-4f5f-9a3c-12190e2ddd26&sheet=ebe049ca-3155-49b3-a9c9-f42120cd7440&lang=en-US&theme=zs-theme&opt=nointeraction,noselections" style="border:none;width:100%;height:1200px;"></iframe>
             <hr>
           </div>
         </div>
         <!-- Third Dashboard section-->
         <div class="row">
           <div class="col">
-            <h3 style="font-family: Open Sans;">iFrame with custom theme, all filtering and interactivity disabled, full size.</h3>
-	    <p>In this variation, the iFrame is using a custom theme. This could be very useful if the same dashboard is used for multiple user groups who all want their own branding</p>
-            <iframe src="https://zsdemo.us.qlikcloud.com/single/?appid=7d1ec712-e3c9-4f5f-9a3c-12190e2ddd26&sheet=ebe049ca-3155-49b3-a9c9-f42120cd7440&lang=en-US&theme=zs-theme&opt=nointeraction,noselections" style="border:none;width:100%;height:1200px;"></iframe>
+            <h3 style="font-family: Open Sans;">Using custom HTML menus.</h3>
+	    <p>Here, multiple iFrames are embedded into different components of the HTML code, creating a custom navigation. While in this example, all iFrames are coming from the same Qlik Sense app, it could be configured to pull pages from different apps.</p>
+            
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+  <li class="nav-item">
+    <a class="nav-link active" id="performance-tab" data-toggle="tab" href="#performance" role="tab" aria-controls="performance" aria-selected="true">Business Performance</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Profile</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Contact</a>
+  </li>
+</ul>
+<div class="tab-content" id="myTabContent">
+  <div class="tab-pane fade show active" id="performance" role="tabpanel" aria-labelledby="performance-tab">
+	  <iframe src="https://zsdemo.us.qlikcloud.com/single/?appid=7d1ec712-e3c9-4f5f-9a3c-12190e2ddd26&sheet=ebe049ca-3155-49b3-a9c9-f42120cd7440&lang=en-US&theme=zs-theme&opt=nointeraction,noselections" style="border:none;width:100%;height:1200px;"></iframe>
+  </div>
+  <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
+  <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
+</div>		  
+		  
+		  
+		  
             <hr>
           </div>
         </div>
