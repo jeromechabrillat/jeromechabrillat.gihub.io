@@ -92,7 +92,7 @@
           <div class="col">
             <h3 style="font-family: Open Sans;">iFrame with custom theme, all filtering and interactivity disabled.</h3>
 	    <p>In this variation, the iFrame is using a custom theme. This could be very useful if the same dashboard is used for multiple user groups who all want their own branding</p>
-            <iframe src="https://zsdemo.us.qlikcloud.com/single/?appid=7d1ec712-e3c9-4f5f-9a3c-12190e2ddd26&sheet=ebe049ca-3155-49b3-a9c9-f42120cd7440&lang=en-US&theme=zs-theme&opt=nointeraction,noselections" style="border:none;width:100%;height:1200px;"></iframe>
+            <iframe src="https://zsdemo.us.qlikcloud.com/single/?appid=7d1ec712-e3c9-4f5f-9a3c-12190e2ddd26&sheet=ebe049ca-3155-49b3-a9c9-f42120cd7440&lang=en-US&theme=zs-theme&opt=nointeraction,noselections" style="border:none;width:100%;height:768px;"></iframe>
             <hr>
           </div>
         </div>
@@ -102,24 +102,28 @@
             <h3 style="font-family: Open Sans;">Using custom HTML menus.</h3>
 	    <p>Here, multiple iFrames are embedded into different components of the HTML code, creating a custom navigation. While in this example, all iFrames are coming from the same Qlik Sense app, it could be configured to pull pages from different apps.</p>
             
-<ul class="nav nav-tabs" id="myTab" role="tablist">
-  <li class="nav-item">
-    <a class="nav-link active" id="performance-tab" data-toggle="tab" href="#performance" role="tab" aria-controls="performance" aria-selected="true">Business Performance</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Profile</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Contact</a>
-  </li>
-</ul>
-<div class="tab-content" id="myTabContent">
-  <div class="tab-pane fade show active" id="performance" role="tabpanel" aria-labelledby="performance-tab">
-	  <iframe src="https://zsdemo.us.qlikcloud.com/single/?appid=7d1ec712-e3c9-4f5f-9a3c-12190e2ddd26&sheet=ebe049ca-3155-49b3-a9c9-f42120cd7440&lang=en-US&theme=zs-theme&opt=nointeraction,noselections" style="border:none;width:100%;height:1200px;"></iframe>
-  </div>
-  <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
-  <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
-</div>		  
+		<ul class="nav nav-tabs" id="myTab" role="tablist">
+		  <li class="nav-item">
+		    <a class="nav-link active" id="performance-tab" data-toggle="tab" href="#performance" role="tab" aria-controls="performance" aria-selected="true">Business Performance</a>
+		  </li>
+		  <li class="nav-item">
+		    <a class="nav-link" id="execution-tab" data-toggle="tab" href="#execution" role="tab" aria-controls="execution" aria-selected="false">Execution</a>
+		  </li>
+		  <li class="nav-item">
+		    <a class="nav-link" id="market-tab" data-toggle="tab" href="#market" role="tab" aria-controls="market" aria-selected="false">Market</a>
+		  </li>
+		</ul>
+		<div class="tab-content" id="myTabContent">
+		  <div class="tab-pane fade show active" id="performance" role="tabpanel" aria-labelledby="performance-tab">
+			  <iframe src="https://zsdemo.us.qlikcloud.com/single/?appid=7d1ec712-e3c9-4f5f-9a3c-12190e2ddd26&sheet=ebe049ca-3155-49b3-a9c9-f42120cd7440&theme=zs-theme&opt=nointeraction,noselections&select=$::Territory%20Name,ALLENTOWN%2C%20PA" style="border:none;width:100%;height:768px;"></iframe>
+		  </div>
+		  <div class="tab-pane fade" id="execution" role="tabpanel" aria-labelledby="execution-tab">
+			<iframe src="https://zsdemo.us.qlikcloud.com/single/?appid=7d1ec712-e3c9-4f5f-9a3c-12190e2ddd26&sheet=48b32a32-0f40-419d-852b-6bbcd833f3ce&theme=zs-theme&opt=nointeraction,noselections&select=$::Territory%20Name,ALLENTOWN%2C%20PA" style="border:none;width:100%;height:768px;"></iframe>	
+		  </div>
+		  <div class="tab-pane fade" id="market" role="tabpanel" aria-labelledby="market-tab">
+			  <iframe src="https://zsdemo.us.qlikcloud.com/single/?appid=7d1ec712-e3c9-4f5f-9a3c-12190e2ddd26&sheet=002ba972-fe41-4d0c-8bb0-ae76e23be257&theme=zs-theme&opt=nointeraction,noselections&select=$::Territory%20Name,ALLENTOWN%2C%20PA" style="border:none;width:100%;height:768px;"></iframe>
+		  </div>
+		</div>		  
 		  
 		  
 		  
