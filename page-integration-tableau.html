@@ -77,7 +77,7 @@
         <div class="row">
           <div class="col">
             <h3 style="font-family: Open Sans;">Same dashboard with advanced parameters to remove Tableau generic UI.</h3>
-            <div class='tableauPlaceholder' style='width: 100%; height: 100%;'>
+            <div class='tableauPlaceholder' style='width: 100%; height: 768px;'>
               <object class='tableauViz' width='100%' height='100%' style='display:none;'>
                 <param name='host_url' value='https%3A%2F%2Fprod-useast-b.online.tableau.com%2F' />
                 <param name='embed_code_version' value='3' />
@@ -94,6 +94,60 @@
           </div>
         </div>
       </div>
+
+        <!-- Third Dashboard section-->
+        <div class="row">
+          <div class="col">
+            <h3 style="font-family: Open Sans;">Using custom HTML menus.</h3>
+	    <p>Here, multiple Tableau dashboard are embedded into different components of the HTML code, creating a custom navigation. While in this example, all elements are coming from the same Tableau app app, it could be configured to pull pages from different apps.</p>
+            
+		<ul class="nav nav-tabs" id="myTab" role="tablist">
+		  <li class="nav-item">
+		    <a class="nav-link active" id="tracking-tab" data-toggle="tab" href="#tracking" role="tab" aria-controls="performance" aria-selected="true">Account Tracking</a>
+		  </li>
+		  <li class="nav-item">
+		    <a class="nav-link" id="opportunities-tab" data-toggle="tab" href="#opportunities" role="tab" aria-controls="opportunities" aria-selected="false">Opportunities</a>
+		  </li>
+		</ul>
+		<div class="tab-content" id="myTabContent">
+		  <div class="tab-pane fade show active" id="tracking" role="tabpanel" aria-labelledby="tracking-tab">
+            <div class='tableauPlaceholder' style='width: 100%; height: 768px;'>
+              <object class='tableauViz' width='100%' height='100%' style='display:none;'>
+                <param name='host_url' value='https%3A%2F%2Fprod-useast-b.online.tableau.com%2F' />
+                <param name='embed_code_version' value='3' />
+                <param name='site_root' value='&#47;t&#47;zsdemo' />
+                <param name='name' value='AccountTracking&#47;AccountTracking' />
+                <param name='tabs' value='no' />
+                <param name='toolbar' value='no' />
+                <param name='showAppBanner' value='false' />
+                <param name='dataDetails' value='no' />
+                <param name="load-order" value="3"/>
+              </object>
+            </div>
+		  </div>
+		  <div class="tab-pane fade" id="opportunities" role="tabpanel" aria-labelledby="opportunities-tab">
+            <div class='tableauPlaceholder' style='width: 100%; height: 768px;'>
+              <object class='tableauViz' width='100%' height='100%' style='display:none;'>
+                <param name='host_url' value='https%3A%2F%2Fprod-useast-b.online.tableau.com%2F' />
+                <param name='embed_code_version' value='3' />
+                <param name='site_root' value='&#47;t&#47;zsdemo' />
+                <param name='name' value='AccountTracking&#47;Tooltip-OpportunitiesbyCloseDate' />
+                <param name='tabs' value='no' />
+                <param name='toolbar' value='no' />
+                <param name='showAppBanner' value='false' />
+                <param name='dataDetails' value='no' />
+                <param name="load-order" value="4"/>
+              </object>
+            </div>
+		  </div>
+		</div>		  
+		  
+		  
+		  
+            <hr>
+          </div>
+        </div>
+      </div>        
     </main>
 
     <!-- Footer section, repeat on other pages-->
