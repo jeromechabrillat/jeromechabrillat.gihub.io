@@ -15,31 +15,14 @@
     <link rel="icon" href="img/favicon.png" type="image/x-icon">
 
     <!-- call the Tableau API script -->
-    <script type='text/javascript' src='https://prod-useast-b.online.tableau.com/javascripts/api/tableau-2.min.js'></script>
 
     <!-- Tableau API script -->
-    <script type="text/javascript">
-        function initViz() {
-            var containerDiv = document.getElementById("vizContainer"),
-                url = "http://public.tableau.com/views/RegionalSampleWorkbook/Storms",
-                options = {
-                    hideTabs: true,
-                    onFirstInteractive: function () {
-                        console.log("Run this code when the viz has finished loading.");
-                    }
-                };
-
-            var viz = new tableau.Viz(containerDiv, url, options);
-            // Create a viz object and embed it in the container div.
-        }
-    </script>  
-  
+ 
     <title>Embedded Analytics Showcase: Web Mashups, Page Integration with Tableau</title>
 
 </head>
   
-<body onload="initViz();">
-  <div id="vizContainer"></div>
+<body>
     <p>hello world!</p>
 </body>
 </html>
